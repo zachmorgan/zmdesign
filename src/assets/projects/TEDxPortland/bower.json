@@ -1,7 +1,0 @@
-{
-  "name": "foundation-libsass-template",
-  "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "slick-carousel": "~1.5.8"
-  }
-}
