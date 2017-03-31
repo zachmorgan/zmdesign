@@ -1,0 +1,52 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+p {
+	margin: 0 0 10px 0;
+	font-size: 1rem;
+	line-height: 1.35rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 0 0 10px 0;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin: 0 0 10px 0;
+}
+
+.mainContent {
+	padding: 0 5%;
+}
+
+/*article {
+  -webkit-columns: 300px 3;
+  columns: 300px 3;
+}*/
+
+article {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 150px;
+  -moz-column-width: 150px;
+  column-width: 150px;
+  column-gap: 4rem;
+  -moz-column-gap: 4rem;
+  -webkit-column-gap: 4rem;
+  column-rule: 1px solid #ccc;
+  -moz-column-rule: 1px solid #ccc;
+  -webkit-column-rule: 1px solid #ccc;
+}

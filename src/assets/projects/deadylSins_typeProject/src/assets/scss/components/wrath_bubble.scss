@@ -1,0 +1,129 @@
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.backpage .large-header {
+  background-image: url('../img/wrath-bridge-bw.jpg');
+  background-position: center bottom;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 88%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.backpage .main-title {
+  font-family: 'Buffied', cursive;
+  font-weight: normal;
+  font-size: 20rem;
+  color: $Tblood;
+  padding-left: 10px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+}
+
+.backpage .main-title:before {
+  content: '';
+  width: 1000vw;
+  height: 1000vw;
+  min-width: 3.5em;
+  min-height: 3.5em;
+  background: rgba(65, 65, 65, 0.65);
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.main-list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 21%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  
+  li {
+    list-style: none;
+  }
+  
+  .article-nav a {
+    color: #1c1c1c;
+    font-family: $Raleway;
+    font-weight: 200;
+    @include rem-fallback(font-size, 2);
+    line-height: 2.7rem;
+    text-decoration: none;
+    
+    &:hover {
+      color: $blood;
+    }
+    
+    &:active {
+      color: #fff;
+    }
+  }
+}
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 100%;
+  }
+  
+  .backpage .main-title {
+    font-size: 8rem;
+  }
+  
+  .main-list {
+    .article-nav a {
+      @include rem-fallback(font-size, .8);
+      line-height: 1.3rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .backpage .main-title {
+    font-size: 10rem;
+  }
+  
+  .main-list {
+    .article-nav a {
+      @include rem-fallback(font-size, 1);
+      line-height: 1.7rem;
+    }
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .backpage .main-title {
+    font-size: 17rem;
+  }
+  
+  .main-list {
+    .article-nav a {
+      @include rem-fallback(font-size, 1.5);
+      line-height: 2.3rem;
+    }
+  }
+}

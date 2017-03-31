@@ -1,0 +1,37 @@
+
+nav {
+  float: right;
+  padding: 5px 0;
+}
+
+.mainNav {
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  li {
+    display: inline-block;
+    padding-left: 10px;
+
+    &:first {
+      padding-left: 0;
+    }
+  }
+}
+
+.deliverables {
+  columns: 2;
+  column-count: 2;
+}
+
+footer {
+  background-color: #333;
+  min-height: 100px;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  
+  nav {
+    float: none;
+    text-align: center;
+  }
+}

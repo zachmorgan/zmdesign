@@ -1,0 +1,28 @@
+$top-font: 'Oswald', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+/* New Colors */
+
+$c-main: #7b9c92;
+$c-secondary: #6b7874;
+$c-accent: #bc8a6f;
+$c-font: #ab6b4a;
+$c-divider: #bdbab7;
+
+/* Old Colors */
+
+/*$c-main: #009688;
+$c-secondary: #607d8b;
+$c-accent: #a54f00;
+$c-font: #a5a6a7;
+$c-font-secondary: #727272;
+$c-divider: #b6b6b6;*/
+
+/* Fluid Type */
+
+$min_width: 320px;
+$max_width: 2880px;
+$min_font: 12px;
+$max_font: 36px;
+$mod_1: 1.2; // mobile
+$mod_2: 1.6; // desktop

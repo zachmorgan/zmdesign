@@ -1,0 +1,422 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: '';
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  background: darken($c-main, 3%);
+}
+
+body {
+  background: $c-divider;
+  color: darken($c-divider, 55%);
+  font-weight: 400;
+  font-family: $body-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $top-font;
+  color: $c-font;
+  font-weight: 700;
+}
+
+h1 {  
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+}
+h2 {  
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+}
+h3 { 
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+h4 {
+  font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+h5 {
+  font-size: $mod_1*$mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+h6 {
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
+}
+
+p, ul, ol, li, form, input, textarea, button {
+  font-size: 0.8*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
+  line-height: 1.4em;
+}
+
+.row {
+	width: 90%;
+}
+
+.row { 
+  .row {
+    width: 98%;
+  }
+}
+
+.intro {
+  background: darken($c-main, 3%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+	margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: inline-block;
+  position: absolute;
+  min-width: 360px;
+  top: 10px;
+  right: 15px;
+  margin: 2px;
+  z-index: 12;
+  
+  
+}
+
+/* Dopdown & Mobile Contact Form */
+#contactModal {
+  background: lighten($c-accent, 18%);
+  border: 0;
+  
+  .contact {
+    padding-top: 2rem;
+  }
+  
+  .close-button {
+	  color: darken($c-accent, 1%);
+    
+    &:link {
+      color: darken($c-accent, 1%);
+    }
+    
+    &:visited {
+      color: darken($c-accent, 1%);
+    }
+    
+    &:hover {
+      transition: color 0.6s ease;
+      color: darken($c-font, 2%);
+      text-shadow: 0px 5px 2px rgba(186, 135, 108, 0.4);
+    }
+    
+    &:active {
+      transition: color 0.6s ease;
+      color: darken($c-font, 2%);
+      text-shadow: 0px 5px 2px rgba(186, 135, 108, 0.4);
+    }
+  }
+  
+  input, textarea {
+    border-radius: 10px;
+    border: 3px solid $c-divider;
+    background-color: lighten($c-divider, 35%);
+    
+    &:focus {
+      transition: border 0.6s ease;
+      border: 3px solid lighten($c-secondary, 15%);
+      box-shadow: inset 0 0 10px $c-main;
+    }
+  }
+  
+	.button {
+    background-color: lighten($c-accent, 5%);
+    border: 2px solid $c-accent;
+    width: 100%;
+    color: #fff;
+    padding: 0.55em 0;
+    
+    &:hover {
+      transition: border 1s ease, color 1s ease;
+      background-color: $c-accent;
+      border: 2px solid darken($c-accent, 5%);
+      box-shadow: inset 0 0 10px $c-accent;
+    }
+  }
+}
+
+/* Project View */
+.tabs h3 {
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+.tabs, .tabs-content {
+	background: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+}
+
+.tabs-panel {
+	margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.tabs-links {
+	display: inline-block;
+  .button {
+    display: inline-grid;
+    background-color: lighten($c-accent, 5%);
+    border: 2px solid $c-accent;
+    color: #fff;
+    
+    &:hover {
+      transition: border 1s ease, color 1s ease;
+      background-color: $c-accent;
+      border: 2px solid darken($c-accent, 5%);
+      box-shadow: inset 0 0 10px $c-accent;
+    }
+  }
+}
+
+/* Project Tabs */
+
+.tile {
+  margin-top: 15px;
+}
+
+.tabs-title {
+  a {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    color: #fff;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: none;
+      
+      img {
+        background-color: none;
+        box-shadow: 0 8px 6px -6px $c-accent;
+      }
+      h4 {
+        color: $c-accent;
+      }
+    }
+    
+    &:focus, &[aria-selected='true'] {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  figure {
+    display: table;
+    margin: 0;
+    position: relative;
+
+    img {
+      display: block;
+      position: relative;
+      width: 100%;
+      box-shadow:0 0 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+
+    img:before, img:after {
+      content:"";
+      position:absolute;
+      z-index:-1;
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      top:50%;
+      bottom:0;
+      left:10px;
+      right:10px;
+      border-radius:100px / 10px;
+    }
+
+    img:after {
+      right:10px;
+      left:auto;
+      transform:skew(8deg) rotate(3deg);
+    }
+
+    figcaption {
+      display: table-caption;
+      caption-side: bottom;
+      padding: 10px;
+      background: darken($c-main, 12%);
+      color: lighten($c-secondary, 4%);
+      max-width: 100%;
+
+      h4 {
+        font-size: $mod_1*$mod_1*$mod_1 *1rem;
+        @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#twist, #stellaris{
+  height: 500px;
+}
+
+footer {
+  position: relative;
+  background: darken($c-main, 3%);
+  color: $c-accent;
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  margin-top: 30px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+    
+  .contact-box {
+    input, textarea {
+      border-radius: 10px;
+      border: 3px solid $c-divider;
+      background-color: lighten($c-divider, 35%);
+
+      &:focus {
+        transition: border 0.6s ease;
+        border: 3px solid lighten($c-secondary, 15%);
+        box-shadow: inset 0 0 10px $c-main;
+      }
+    }
+
+    .button {
+      background-color: lighten($c-accent, 5%);
+      border: 2px solid $c-accent;
+      width: 100%;
+      color: #fff;
+      padding: 0.55em 0;
+      
+      &:link {
+        background-color: lighten($c-accent, 5%);
+        border: 2px solid $c-accent;
+        width: 100%;
+        color: #fff;
+        padding: 0.55em 0;
+      }
+      
+      &:visited {
+        background-color: lighten($c-accent, 5%);
+        border: 2px solid $c-accent;
+        width: 100%;
+        color: #fff;
+        padding: 0.55em 0;
+      }
+
+      &:hover {
+        transition: border 1s ease, color 1s ease;
+        background-color: $c-accent;
+        border: 2px solid darken($c-accent, 5%);
+        box-shadow: inset 0 0 10px $c-accent;
+      }
+      
+      &:active {
+        transition: border 1s ease, color 1s ease;
+        background-color: $c-accent;
+        border: 2px solid darken($c-accent, 5%);
+        box-shadow: inset 0 0 10px $c-accent;
+      }
+    }
+  }
+
+  .skill-info {
+    .contact-footer {
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+  
+  .copyright {
+	  padding-bottom: 10px;
+  }
+  
+  .copyright-text {
+    color: #fff;
+  }
+  
+  .socialBot {
+    display: inline-block;
+    margin: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 20em) and (max-width: 36.25em) {
+  .logo {
+    margin: 0 auto;
+    width: 250px;
+  }
+  
+  .tabs-panel {
+    h2 {
+      padding-top: 5px;
+    }
+}
+  .social {
+    position: relative;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  
+  .socialBot li {
+	  padding-bottom: 5px;
+    font-size: 25px;
+  }
+  
+  .tile {
+    margin-top: 12px;
+  }
+  
+  .logos {
+    .tile img {
+      margin: 0 auto;
+    }
+  }
+  
+  .skill-info {
+    h4 {
+      
+    }
+  }
+  
+  #contact2 {
+    display: none;
+  }
+}

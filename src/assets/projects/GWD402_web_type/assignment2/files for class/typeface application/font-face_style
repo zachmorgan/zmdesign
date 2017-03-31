@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'ostrich sans black';
+  src: url("../webfonts/ostrich-sans-black.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/ostrich-sans-black.eot?#iefix") format("embedded-opentype"), url("../webfonts/ostrich-sans-black.woff") format("woff"), url("../webfonts/ostrich-sans-black.ttf") format("truetype"), url("../webfonts/ostrich-sans-black.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ostrich sans bold';
+  src: url("../webfonts/ostrich-sans-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/ostrich-sans-bold.eot?#iefix") format("embedded-opentype"), url("../webfonts/ostrich-sans-bold.woff") format("woff"), url("../webfonts/ostrich-sans-bold.ttf") format("truetype"), url("../webfonts/ostrich-sans-bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ostrich sans regular';
+  src: url("../webfonts/ostrich-sans-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/ostrich-sans-regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/ostrich-sans-regular.woff") format("woff"), url("../webfonts/ostrich-sans-regular.ttf") format("truetype"), url("../webfonts/ostrich-sans-regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ostrich sans light';
+  src: url("../webfonts/ostrich-sans-light.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/ostrich-sans-light.eot?#iefix") format("embedded-opentype"), url("../webfonts/ostrich-sans-light.woff") format("woff"), url("../webfonts/ostrich-sans-light.ttf") format("truetype"), url("../webfonts/ostrich-sans-light.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}

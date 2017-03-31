@@ -1,0 +1,30 @@
+Questions: 
+1. Who will be updating the website, do you want to give admin rights to certain users? ie: one member for content editing, and one member for uploading videos, etc.
+
+2. Do you want to include representation of the local businesses involved in your special program as sponsors on the website?
+
+3. What makes your gym different? What sets you apart from the rest?
+
+4. Do you want this website to be accessable on mobile platforms? 
+
+5. What are the programs you wish to offer?
+
+6. Do you want to feature a specific member video and their progress on the home page? 
+
+7. How many members do you expect to upload videos for? 
+
+8. What type of content do you plan to provide and how much of it do you still need to get?
+
+9. Do you also wish to allow your users to share reviews via social media ie: Twitter, Facebook, G+
+
+10. What content do you want to associate with each video?
+
+11. How does your point system work?
+
+12. Do you want a contact form?
+
+13. Do you want an about page that includes "what sets us apart from others"?
+
+14. Can you show us some examples of websites that you like or of websites that represent a similar essance to that of your gym?
+
+15. Do you want to have a calendar that shows trainers available hours and when the trainer is reserved? 

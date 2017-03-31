@@ -1,0 +1,23 @@
+﻿div#svgcontainer {
+    width:620px;
+    height:460px;
+    background-color: white;
+    position: relative;
+}
+
+figure {
+	margin: 0;
+}
+
+div#office img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#flag img{
+    z-index: -1;
+    
+    margin-left: 40px;
+    margin-top: 5px;
+}

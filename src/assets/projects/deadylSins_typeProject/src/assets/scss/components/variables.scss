@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,300italic|Raleway:400,200);
+
+@font-face {
+  font-family: 'Buffied';
+  src: url('../fonts/Buff/buff-webfont.eot');
+  src: url('../fonts/Buff/buff-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Buff/buff-webfont.woff2') format('woff2'),
+       url('../fonts/Buff/buff-webfont.woff') format('woff'),
+       url('../fonts/Buff/buff-webfont.ttf') format('truetype'),
+       url('../fonts/Buff/buff-webfont.svg#buffiedregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$Raleway: 'Raleway', verdana, sans-serif;
+$Mweather: 'Merriweather', georgia, serif;
+$Tblood: rgba(39, 8, 8, 0.8);
+$blood: rgb(39, 8, 8);
+$twhite: #dadada;
+$dkgrey: rgb(65, 65, 65);

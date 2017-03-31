@@ -1,0 +1,52 @@
+.section{
+    margin-top: 10px;
+}
+
+.section--contact-form{
+    width: 67%;
+    margin: 10px auto;
+    padding: 10px;
+    clear: both;
+    overflow: auto;
+}
+
+.comment-form__left{
+    width: 45%;
+    padding: 10px;
+    float: left;
+}
+
+.commnet-form__right{
+    width: 45%;
+    padding: 10px;
+    float: left;
+}
+
+.find-us{
+    width: 100%;
+    height: auto;
+    padding: 20px 60px;
+    margin: 10px auto;
+    background-color: $dark-gray;
+    color: $white;
+    clear: both;
+    overflow: auto;
+}
+
+.find-us--section{
+    float: left;
+    width: 32%;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.find-us__panel {
+	font-family: $sans-serif;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $light-gray;
+	margin: 0;
+	padding: 1.25rem;
+	background-color: $lightest-grey;
+}

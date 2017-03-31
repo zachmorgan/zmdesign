@@ -1,0 +1,20 @@
+{
+	"title" : "Home Page",
+	"bodyClass": "home",
+    "contact" : {
+        
+    },
+	"location" : {
+		"img": {
+			"square": {
+				"src": "../../images/map-square.png",
+				"alt": "Location of gym "	
+			}
+		},
+        "a": {
+            "url": {
+                "href": "https://www.google.com/maps/place/Hollywood+Fitness/@45.5435135,-122.6085823,15z/data=!4m2!3m1!1s0x0:0xbefafee517b12398?hl=en-US"
+            }
+        }
+	}
+}

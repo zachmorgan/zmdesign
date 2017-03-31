@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-size: 30px;
+  font-style: normal;
+}.flaticon-camera89:before {
+	content: "\e000";
+}
+.flaticon-cross106:before {
+	content: "\e001";
+}
+.flaticon-dropbox15:before {
+	content: "\e002";
+}
+.flaticon-email103:before {
+	content: "\e003";
+}
+.flaticon-github17:before {
+	content: "\e004";
+}
+.flaticon-google118:before {
+	content: "\e005";
+}
+.flaticon-link23:before {
+	content: "\e006";
+}
+.flaticon-linkedin11:before {
+	content: "\e007";
+}
+.flaticon-logo95:before {
+	content: "\e008";
+}
+.flaticon-logotype228:before {
+	content: "\e009";
+}
+.flaticon-menu51:before {
+	content: "\e00a";
+}
+[class^="flaticon-"], [class*=" flaticon-"],
+[class^="flaticon-"], [class*=" flaticon-"] {
+  font-family: Flaticon;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  -moz-transition: color, 0.6s;
+  -o-transition: color, 0.6s;
+  -webkit-transition: color, 0.6s;
+  transition: color, 0.6s;
+}
+
+[class^="flaticon-"]:hover, [class*=" flaticon-"]:hover,
+[class^="flaticon-"]:hover, [class*=" flaticon-"]:hover {
+  color: darken($c-main, 17%);
+}

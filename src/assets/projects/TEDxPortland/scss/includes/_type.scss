@@ -1,0 +1,111 @@
+h1 {
+  font-family: $font-stack;
+  font-size: 3.8em;
+  color: $tedBlack;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $font-stack;
+  color: #da291c;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.6em;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1em;
+  color: $tedBlack;
+}
+
+h6 {
+  font-size: 0.75em;
+  font-style: italic;
+  color: $tedRed;
+}
+
+p {
+  
+}
+
+.tedX {
+  color: $tedRed;
+  font-weight: bolder;
+}
+
+.tedX sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.36em;
+}
+
+.tedDate {
+  color: $tedRed;
+}
+
+.tedSub {
+  font-size: 1.2em;
+  color: $tedBlack;
+  margin-top: -1.3em;
+}
+
+.studentProj {
+  font-size: 1em;
+  font-weight: lighter;
+  margin-top: -0.6em;
+}
+
+.mainNav {
+  
+  li {
+    
+    a {
+      color: $link;
+      padding: 15px;
+      border-bottom: 2px solid #fff;
+      transition: color 400ms ease, border-color 400ms ease;
+      
+      &:hover {
+        color: $tedRed;
+        border-bottom: 2px solid $tedRed;
+      }
+    }
+  }
+}
+
+footer .mainNav {
+  
+  li {
+    
+    a {
+      border-bottom: 2px solid #333;
+    }
+  }
+}
+
+footer h6 {
+  text-align: center;
+  
+  a {
+    color: $tedRed;
+    transition: color 400ms ease;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.text-spacing {
+  text-align: justify;
+}
