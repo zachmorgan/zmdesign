@@ -1,6 +1,6 @@
 $(document).foundation();
 
-var exTabs = new Foundation.Tabs($('#projectTabs'), options);
+var exTabs = new Foundation.Tabs($('#projectTabs'));
 $('#projectTabs').foundation('_handleTabChange', $target);
 $('#projectTabs').foundation('_openTab', $target);
 $('#projectTabs').foundation('_collapseTab', $target);
