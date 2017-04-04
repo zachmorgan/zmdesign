@@ -51,51 +51,38 @@
     {{> body}}
 
     <script src="{{root}}assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="assets/js/turn.min.js"></script>
     <script src="assets/js/turn.html4.min.js"></script>
     <script type="text/javascript">
+      function loadApp() {
 
-    function loadApp() {
+        // Create the flipbook
 
-      // Create the flipbook
+        $('.twist').turn({
+            width:816,
+            height:528,
+            elevation: 50,
+            gradients: true,
+            autoCenter: true
+        });
+        $('.stellaris').turn({
+            width:812,
+            height:624,
+            elevation: 50,
+            gradients: true,
+            autoCenter: true
+        });
+      }
 
-      $('.twist').turn({
-          // Width
-          width:816,
-          // Height
-          height:528,
-          // Elevation
-          elevation: 50,
-          // Enable gradients
-          gradients: true,
-          // Auto center this flipbook
-          autoCenter: true
+      // Load the HTML4 version if there's not CSS transform
+      yepnope({
+        test : Modernizr.csstransforms,
+        yep: ['{{root}}assets/js/turn.min.js'],
+        nope: ['{{root}}assets/js/turn.html4.min.js'],
+        both: ['{{root}}assets/css/app.css'],
+        complete: loadApp
       });
-      $('.stellaris').turn({
-          // Width
-          width:812,
-          // Height
-          height:624,
-          // Elevation
-          elevation: 50,
-          // Enable gradients
-          gradients: true,
-          // Auto center this flipbook
-          autoCenter: true
-      });
-    }
-
-    // Load the HTML4 version if there's not CSS transform
-
-    yepnope({
-      test : Modernizr.csstransforms,
-      yep: ['{{root}}assets/js/turn.min.js'],
-      nope: ['{{root}}assets/js/turn.html4.min.js'],
-      both: ['{{root}}assets/css/app.css'],
-      complete: loadApp
-    });
-
     </script>
-    
   </body>
 </html>
