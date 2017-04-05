@@ -86,6 +86,12 @@ p, ul, ol, li, form, input, textarea, button {
 .logo {
 	margin: 0;
   padding: 0;
+  
+  img {
+    height: 150px;
+    margin: 1em 0;
+    color: #fff;
+  }
 }
 
 .social {
