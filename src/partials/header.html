@@ -1,0 +1,40 @@
+<header class="intro">
+  <div class="logo">
+    <a href="/"><img src="assets/img/zmd_logo.svg" alt="Z Morgan Design Logo" /></a>
+  </div>
+  <div class=" large-up-5 small-up-5 social social-small">
+    <div id="contact" class="column">
+      <a data-open="contactModal" src="#contact1" class="flaticon-email103"></a>
+      <div class="reveal" id="contactModal" data-reveal data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+        <div class="contact">
+          <div class="contact--form">
+            <form data-abide novalidate name="contact1" id="contact1" class="contact--form__content" action="{{root}}assets/contact.php" method="post">
+               <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <a name="contact"><input type="text" id="name" name="name" placeholder="NAME" autofocus required></a>
+              <input type="email" id="email" name="email" placeholder="EMAIL" required>
+              <textarea name="message" id="message" cols="20" rows="7" wrap="hard" placeholder="MESSAGE" required></textarea>
+              <input type="submit" name="submit" id="submit" class="button" value="Submit">
+            </form>
+          </div>
+        </div>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="column">
+      <a href="https://github.com/zachmorgan" target="_blank" class="flaticon-github17"></a>
+    </div>
+    <div class="column">
+      <a href="https://twitter.com/Zaldiain" target="_blank" class="flaticon-logo95"></a>
+    </div>
+    <div class="column">
+      <a href="https://plus.google.com/u/0/+ZacharyMorgan_zmdesign" target="_blank" class="flaticon-google118"></a>
+    </div>
+    <div class="column">
+      <a href="https://linkedin.com/in/morganzachary" target="_blank" class="flaticon-linkedin11"></a>
+    </div>
+  </div>
+</header>
