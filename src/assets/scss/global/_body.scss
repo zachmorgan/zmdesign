@@ -70,7 +70,7 @@ p, ul, ol, li, form, input, textarea, button {
 
 .row { 
   .row {
-    width: 98%;
+    width: 95%;
   }
 }
 
@@ -208,78 +208,51 @@ p, ul, ol, li, form, input, textarea, button {
   margin-top: 15px;
 }
 
-.tabs-title {
-  a {
-    padding: 0;
-    margin: 0;
-    background-color: none;
-    color: #fff;
-    transition: background-color 0.4s;
+figure {
+  display: table;
+  margin: 0;
+  position: relative;
 
-    &:hover {
-      background-color: none;
-      
-      img {
-        background-color: none;
-        box-shadow: 0 8px 6px -6px $c-accent;
-      }
-      h4 {
-        color: $c-accent;
-      }
-    }
-    
-    &:focus, &[aria-selected='true'] {
-      margin: 0;
-      padding: 0;
-    }
+  img {
+    display: block;
+    position: relative;
+    width: 100%;
+    box-shadow:0 0 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
 
-  figure {
-    display: table;
-    margin: 0;
-    position: relative;
+  img:before, img:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+  }
 
-    img {
-      display: block;
-      position: relative;
-      width: 100%;
-      box-shadow:0 0 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
+  img:after {
+    right:10px;
+    left:auto;
+    transform:skew(8deg) rotate(3deg);
+  }
 
-    img:before, img:after {
-      content:"";
-      position:absolute;
-      z-index:-1;
-      box-shadow:0 0 20px rgba(0,0,0,0.8);
-      top:50%;
-      bottom:0;
-      left:10px;
-      right:10px;
-      border-radius:100px / 10px;
-    }
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    padding: 10px;
+    background: darken($c-main, 12%);
+    color: lighten($c-secondary, 4%);
+    max-width: 100%;
 
-    img:after {
-      right:10px;
-      left:auto;
-      transform:skew(8deg) rotate(3deg);
-    }
-
-    figcaption {
-      display: table-caption;
-      caption-side: bottom;
-      padding: 10px;
-      background: darken($c-main, 12%);
-      color: lighten($c-secondary, 4%);
-      max-width: 100%;
-
-      h4 {
-        font-size: $mod_1*$mod_1*$mod_1 *1rem;
-        @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        text-align: center;
-      }
+    h4 {
+      font-size: $mod_1*$mod_1*$mod_1 *1rem;
+      @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
     }
   }
 }
