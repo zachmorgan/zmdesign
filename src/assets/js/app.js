@@ -9,29 +9,7 @@ $('#projectTabs').foundation('data-auto-focus', true);
 
 var cModal = new Foundation.Reveal($('#contactModal'));
 $('#contactModal').foundation('toggle');
-
-
-  // Contact Form
-  var $cont = $('.contact-form');
-  var $close = $('.contClose');
-  $('#contact, #mobCont').click(function(){
-    if( $cont.hasClass('bounceOutUp') ) {
-      $cont.removeClass('bounceOutUp').addClass('bounceInDown').css('display', 'block');
-    }else if( $cont.hasClass('bounceInDown') ){
-      $cont.removeClass('bounceInDown').addClass('bounceOutUp');
-      setTimeout(function(){
-        $cont.css("display", "none");
-      }, 1000);
-    }else{
-      $cont.addClass('bounceInDown').css('display', 'block');
-    }
-  });
-
-  $('#contClose').click(function(){
-    if( $cont.hasClass('bounceInDown') ){
-      $cont.removeClass('bounceInDown').addClass('bounceOutUp');
-    }
-  });
+  
   
     // Ajax Contact Form
   $(function() {

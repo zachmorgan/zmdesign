@@ -204,100 +204,72 @@ p, ul, ol, li, form, input, textarea, button {
 /* Project Tabs */
 
 .tile {
-  margin-top: 15px;
+  margin: 15px 0 0 0;
 }
-
-figure {
-  display: table;
-  margin: 0;
-  position: relative;
-
-  img {
-    display: block;
+.link-braces {
+  figure {
+    display: table;
+    margin: 0;
     position: relative;
-    width: 100%;
-    box-shadow:0 0 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  }
+    
+    &:hover h4 {
+      color: lighten($c-font, 1%);
+    }
+    
+    &:hover h4:before, &hover h4:after {
+      opacity: 1;
+      transform: translateX(0);
+    }
 
-  img:before, img:after {
-    content:"";
-    position:absolute;
-    z-index:-1;
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    border-radius:100px / 10px;
-  }
+    img {
+      display: block;
+      position: relative;
+      width: 100%;
+      box-shadow:0 0 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+    
+    figcaption {
+      display: table-caption;
+      caption-side: bottom;
+      padding: 10px;
+      background: darken($c-main, 12%);
+      color: lighten($c-secondary, 4%);
+      max-width: 100%;
 
-  img:after {
-    right:10px;
-    left:auto;
-    transform:skew(8deg) rotate(3deg);
-  }
+      h4 {
+        position: relative;
+        margin: 0;
+        padding: 0 0.25em;
+        font-size: $mod_1*$mod_1*$mod_1 *1rem;
+        @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+        color: #fff;
+        text-align: center;
+        transition: color 0.2s;
 
-  figcaption {
-    display: table-caption;
-    caption-side: bottom;
-    padding: 10px;
-    background: darken($c-main, 12%);
-    color: lighten($c-secondary, 4%);
-    max-width: 100%;
-
-    h4 {
-      font-size: $mod_1*$mod_1*$mod_1 *1rem;
-      @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
-      margin: 0;
-      padding: 0;
-      color: #fff;
-      text-align: center;
+        &:before, &:after {
+          position: absolute;
+          top: 0;
+          line-height: 1;
+          opacity: 0;
+          tansition: opacity 0.2s, transform 0.2s;
+        }
+        
+        &:before {
+          left: -0.1em;
+          content: '[';
+          transform: translateX(-100%);
+        }
+        
+        &:after {
+          right: -0.1em;
+          content: ']';
+          transform: translateX(100%);
+        }
+        
+        
+      }
     }
   }
-}
-
-.link-braces h4 {
-	padding: 0 0.25em;
-	font-weight: 500;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.link-braces h4:hover {
-	color: #d04c3f;
-}
-
-.link-braces h4::before,
-.link-braces h4::after {
-	position: absolute;
-	top: 0;
-	font-weight: 100;
-	font-size: 150%;
-	line-height: 1;
-	opacity: 0;
-	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-	transition: opacity 0.2s, transform 0.2s;
-}
-
-.link-braces h4::before {
-	left: -0.1em;
-	content: '[';
-	-webkit-transform: translateX(-100%);
-	transform: translateX(-100%);
-}
-
-.link-braces h4::after {
-	right: -0.1em;
-	content: ']';
-	-webkit-transform: translateX(100%);
-	transform: translateX(100%);
-}
-
-.link-braces h4:hover::before,
-.link-braces h4:hover::after {
-	opacity: 1;
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
 }
 
 #twist, #stellaris{
