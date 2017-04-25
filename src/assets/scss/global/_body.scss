@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $top-font;
   color: $c-font;
   font-weight: 700;
+  margin: 0;
 }
 
 h1 {  
@@ -174,15 +175,23 @@ p, ul, ol, li, form, input, textarea, button {
 }
 
 /* Project View */
-.tabs h3 {
-  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+#project-disc {
+  padding-bottom: 15px;
 }
 
-
-.tabs-panel {
-	margin: 1rem 0 0 0;
-  padding: 0;
+#project-tech {
+	background-color: lighten($c-accent, 18%);
+  padding: 5px 0 20px 0;
+  
+  h2 {
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  .tech-list {
+    text-align: center;
+    margin-top: 5px;
+  }
 }
 
 .tabs-links {
@@ -264,9 +273,7 @@ p, ul, ol, li, form, input, textarea, button {
           right: -0.1em;
           content: ']';
           transform: translateX(100%);
-        }
-        
-        
+        }   
       }
     }
   }
@@ -284,7 +291,6 @@ footer {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   z-index: 10;
-  margin-top: 30px;
   overflow: hidden;
   width: 100%;
   height: auto;
