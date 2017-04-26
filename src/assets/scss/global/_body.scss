@@ -69,12 +69,6 @@ p, ul, ol, li, form, input, textarea, button {
 	width: 90%;
 }
 
-.row { 
-  .row {
-    width: 95%;
-  }
-}
-
 /* Header */
 .logo {
 	margin: 0;
@@ -242,15 +236,30 @@ p, ul, ol, li, form, input, textarea, button {
   }
 }
 #web-design, #print-design {
-	
+  h2 {
+    text-align: center;
+  }
 }
-#twist, #stellaris{
+#twist {
+  .twist-cover {
+    display: block;
+  }
+  .row img {
+    width: 50%;
+  }
+} 
+
+#stellaris {
 
 }
 
 /* Project View */
 #project-disc {
   padding-bottom: 15px;
+  
+  h5 {
+    color: darken($c-divider, 30%);
+  }
 }
 
 #project-tech {
