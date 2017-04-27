@@ -281,6 +281,17 @@ p, ul, ol, li, form, input, textarea, button {
   }
 }
 
+#project-img {
+  h2 {
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
 .tabs-links {
 	display: inline-block;
   .button {
