@@ -257,6 +257,10 @@ p, ul, ol, li, form, input, textarea, button {
 #project-disc {
   padding-bottom: 15px;
   
+  img {
+    padding-top: 10px;
+  }
+  
   h5 {
     color: darken($c-divider, 30%);
   }
@@ -282,16 +286,19 @@ p, ul, ol, li, form, input, textarea, button {
 }
 
 #project-img {
+  padding: 5px 0 30px 0;
+  
   h2 {
     text-align: center;
-    padding: 5px 0;
+    padding-bottom: 20px;
   }
   
-  img {
-    width: auto;
-    height: 100%;
+  div img {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
+
 .tabs-links {
 	display: inline-block;
   .button {
@@ -407,7 +414,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 20em) and (max-width: 36.25em) {
+@media only screen and (min-width: 10em) and (max-width: 36.25em) {
   .logo {
     margin: 0 auto;
     width: 250px;
@@ -417,7 +424,12 @@ footer {
     h2 {
       padding-top: 5px;
     }
-}
+  }
+  
+  #web-design .tile, #print-design .tile {
+	  justify-content: center;
+  }
+  
   .social {
     position: relative;
     min-width: 320px;
@@ -444,11 +456,17 @@ footer {
   
   .skill-info {
     h4 {
-      
+      font-size: 1.5em;
     }
   }
   
   #contact2 {
     display: none;
+  }
+  
+  #project-img {
+    .chngOrdr {
+      order: -1;
+    }
   }
 }
