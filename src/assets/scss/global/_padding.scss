@@ -31,6 +31,14 @@
 .large-pad-bot {
   padding-bottom: 30px;
 }
+
+.medium-pad-bot {
+  padding-bottom: 20px;
+}
+
+.small-pad-bot {
+  padding-bottom: 10px;
+}
   
 
 /*########################################################################
@@ -68,5 +76,12 @@ Large Screen Size
   .large-pad-bot {
     padding-bottom: 60px;
   }
-
+   
+  .medium-pad-bot {
+    padding-bottom: 40px;
+  }
+  
+  .small-pad-bot {
+    padding-bottom: 20px;
+  }
 }
