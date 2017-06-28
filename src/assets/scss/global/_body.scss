@@ -261,8 +261,8 @@ p, ul, ol, li, form, input, textarea, button {
     padding-top: 10px;
   }
   
-  h5 {
-    color: darken($c-divider, 30%);
+  li {
+    color: darken($c-divider, 45%);
   }
 }
 
@@ -438,7 +438,7 @@ footer {
   
   .socialBot li {
 	  padding-bottom: 5px;
-    font-size: 20px;
+    
   }
   
   .tile {
