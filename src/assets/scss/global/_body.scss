@@ -14,7 +14,6 @@
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  background: darken($c-main, 3%);
 }
 
 body {
@@ -287,11 +286,11 @@ p, ul, ol, li, form, input, textarea, button {
 }
 
 #project-img {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   
   h2 {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 15px 0;
   }
   
   div img {
