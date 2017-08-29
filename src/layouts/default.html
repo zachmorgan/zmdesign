@@ -50,13 +50,18 @@
     {{> footer}}
 
     <script src="{{root}}assets/js/app.js"></script>
-    <!--<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="assets/js/turn.min.js"></script>
-    <script src="assets/js/turn.html4.min.js"></script>-->
-    <!--<script type="text/javascript">
+    <script src="assets/js/turn.html4.min.js"></script>
+    <script type="text/javascript">
       function loadApp() {
 
         // Create the flipbook
+        	$("#flipbook").turn({
+		width: 1632,
+		height: 1056,
+		autoCenter: true
+	});
 
         $('.twist').turn({
             width:816,
@@ -82,6 +87,6 @@
         both: ['{{root}}assets/css/app.css'],
         complete: loadApp
       });
-    </script>-->
+    </script>
   </body>
 </html>
