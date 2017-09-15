@@ -71,10 +71,11 @@ p, ul, ol, li, form, input, textarea, button {
 /* Header */
 .logo {
 	margin: 0;
+  margin-left: 10px;
   padding: 0;
   
   img {
-    
+    width: 200px;
   }
 }
 
@@ -89,7 +90,7 @@ p, ul, ol, li, form, input, textarea, button {
 
   .social-header-icons {
     li:last-of-type {
-      margin-right: 0;
+      margin-right: 10px;
     }
 
     .fa {
@@ -416,7 +417,11 @@ footer {
 @media only screen and (min-width: 10em) and (max-width: 36.25em) {
   .logo {
     margin: 0 auto;
-    width: 250px;
+    
+    img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
   }
   
   .tabs-panel {
@@ -441,6 +446,7 @@ footer {
   
   .tile {
     margin-top: 12px;
+    
   }
   
   .logos {
