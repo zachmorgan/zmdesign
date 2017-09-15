@@ -18,7 +18,7 @@ html {
 
 body {
   background: $c-divider;
-  color: darken($c-divider, 55%);
+  color: darken($c-divider, 75%);
   font-weight: 400;
   font-family: $body-font;
 }
@@ -256,19 +256,25 @@ p, ul, ol, li, form, input, textarea, button {
 #project-disc {
   padding-bottom: 15px;
   
+  p {
+    width: 90%;
+  }
+  
   img {
     padding-top: 10px;
   }
   
   li {
-    color: darken($c-divider, 45%);
+    color: darken($c-divider, 35%);
   }
 }
 
 #project-tech {
 	background-color: lighten($c-accent, 18%);
+  border-top: 1px solid darken($c-accent, 2%);
+  border-bottom: 1px solid darken($c-accent, 2%);
   padding-bottom: 20px;
-  box-shadow: 0 0 15px rgba(188, 142, 117, 0.4);
+  box-shadow: 0 0 20px rgba(188, 142, 117, 0.5);
   
   h2 {
     text-align: center;
